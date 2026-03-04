@@ -1,87 +1,60 @@
-//сделать фон body красным
-// 1)document.body.style.backgroud = 'red'
-// 2)document.getElementdyId("id элемента") //поиск элемента по ID
-// 3)document.querySelector
-// 4)document
-// 5)document
-//
-//
-
-
-//создание обработчика событий click
+// Задание 1:
 // const clicker = () => {
-//     const div = document.querySelector("div")
-//     div.textContent = "Hello,world"
+//      const div = document.querySelector("div")
+//      div.textContent = "текст изменён"
+// 
 // }
+//  document.querySelector("button").addEventListener("click", clicker)
 
-// document.querySelector("button").addEventListener("click", clicker)
 
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//     <meta charset="UTF-8">
-//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//     <title>Document</title>
-//     <link rel="stylesheet" href="./style.css">
-// </head>
-// <body>
-//     <div></div>
-//     <button>CLICK</button>
-//     <script src="./script.js"></script>
-// </body>
-// </html>
+// задание 2:
+// const div = document.querySelector("div")
+// div.addEventListener("mouseenter", () => {div.classList.add("brown")
+// })
+// div.addEventListener("mouseleave", () => { div.classList.remove("brown")
+// })
 
-// 1) Изменение текста элемента при клике. 
-// Создайте кнопку и элемент <p>. При клике на кнопку измените текст внутри <p> на фразу "Текст изменен" .
-// 2) Переключение класса при наведении.
-// Создайте блок с текстом. При наведении на блок добавляйте ему класс, который меняет цвет фона. При уходе курсора удаляйте этот атрибут класс.
-// 3) Переключение видимости элемента.
-// Создайте кнопку <button> и элемент <div>. По нажатию на кнопку скрывайте и показывайте элемент <div>
-// 4) Изменение стилей элементов.
-// Создайте несколько блоков (div) и кнопок (button). Каждая из них должна изменять стиль (цвет фона, размер шрифта) какого-либо блока по нажатию на соответствующую кнопку.
-// 5) Добавление и удаление элементов списка.
-// Создайте список <ul> с элементами списка (<li>). Добавьте текстовое поле и кнопку, при нажатии на которую добавляется новый элемент в список. Также рядом с каждым элементов создайте кнопку "Удалить", которая удаляет конкретный элемент из списка.
-// 6) Изменение нескольких элементов на странице.
-// Сделайте таблицу с несколькими строками и столбцами. При нажатии на ячейку она должна менять свой цвет на зеленый. При повторном нажатии - возвращаться в исходное состояние.
-// (подсказка) - используйте метод classList.toggle() для переключения класса.
-// Всё в одном файле разными функциями
 
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//     <meta charset="UTF-8">
-//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//     <title>Document</title>
-//     <link rel="stylesheet" href="./style.css">
-// </head>
-// <body>
-//     <div class="white">ЭТО ПЕРВЫЙ DIV</div>
-//     <button onclick="clicker()">CLICK</button>
-//     <script src="./script.js"></script>
-// </body>
-// </html>
- 
-// .white {
-//     background-color: white;
-//     height: 80px;
-//     color: black;
-// }
- 
-// .black {
-//     background-color: rgb(0, 0, 0);
-//     height: 80px;
-//     color: rgb(255, 255, 255);
-// }
- 
-// //работа с атрибутами class элементов
-// //элемент.classList.add/remove/toggle("название")
-// //toggle("название") - добавляет класс, если отсутствует у элемента
-// // или удаляет класс, если он уже имеется
-// const clicker = () => {
-// const firstDiv = document.querySelector("div")
-// firstDiv.classList.toggle("black")
-// }
- 
- 
+// Задание 3:
+// const button = document.getElementById('knopka');
+// const textBlock = document.getElementById('text');
+// button.addEventListener('click', () => {
+//     textBlock.classList.toggle('text');
+// });
+
+
+// Задание 4:
+// const btnFon1 = document.getElementById('fon1');
+// const btnText1 = document.getElementById('text1');
+// const block1 = document.getElementById('block1');
+
+// btnFon1.addEventListener('click', () => {
+//     block1.style.backgroundColor = 'gray';
+// });
+
+// btnText1.addEventListener('click', () => {
+//     block1.style.fontSize = '30px';
+// });
+
+// const btnFon2 = document.getElementById('fon2');
+// const btnText2 = document.getElementById('text2');
+// const block2 = document.getElementById('block2');
+
+// btnFon2.addEventListener('click', () => {
+//     block2.style.backgroundColor = 'gray';
+// });
+
+// btnText2.addEventListener('click', () => {
+//     block2.style.fontSize = '20px';
+// });
+
+// const btnFon3 = document.getElementById('fon3');
+// const btnText3 = document.getElementById('text3'); 
+// const block3 = document.getElementById('block3');
+
+// btnFon3.addEventListener('click', () => { 
+//     block3.style.backgroundColor = 'gray';
+// });
+// btnText3.addEventListener('click', () => {
+//     block3.style.fontSize = '20px';
+// });
