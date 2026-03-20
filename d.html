@@ -2,47 +2,37 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Эффект при наведении</title>
-    
-    <!-- 1. CSS СТИЛИ -->
-    <style>
-        /* Стили для самого div, чтобы его было видно */
-        div {
-            width: 200px;
-            height: 200px;
-            background-color: lightgray; /* Исходный цвет */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 50px;
-            cursor: pointer;
-            transition: 0.3s; /* Плавное изменение цвета */
-        }
-
-        /* Стили для класса .brown, который добавляет JS */
-        .brown {
-            background-color: brown !important;
-            color: white;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <header>
+        <h1>Добро пожаловать!</h1>
+    </header>
+    <main class="container">
+        <div class="text-block">
+            <p>Эту кошку зовут кондратьев </p>
+            <img class="image" src="https://www.povarenok.ru/data/cache/2013oct/24/37/542210_44087-640x0.jpg" alt="Пример">
+        </div>
+        <div class="text-block">
+            <p>Этого кота зовут ярик рыжов</p>
+            <img class="image" src="https://images.techinsider.ru/upload/img_cache/9b5/9b56c003d032ee25521915f222270108_cropped_510x510.webp" alt="Пример">
+        </div>
+        <div class="form-container">
+            <h3>Передайте привет</h3>
+            <form>
+                <input type="text" placeholder="От кого">
+                <input type="text" placeholder="Кому">
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </main>
 
-    <!-- 2. HTML ЭЛЕМЕНТ -->
-    <div>Наведи на меня</div>
-
-    <!-- 3. JAVASCRIPT КОД -->
-    <script>
-        const div = document.querySelector("div");
-
-        div.addEventListener("mouseenter", () => {
-            div.classList.add("brown");
-        });
-
-        div.addEventListener("mouseleave", () => {
-            div.classList.remove("brown");
-        });
-    </script>
-
+    <footer>
+        © 2025 Все права защищены
+    </footer>
+    
+    <script src="./script.js"></script>
 </body>
 </html>
